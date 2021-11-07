@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Scanner keyboard = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         int earthWeight, planet;
         double planetWeight = 0.0;
 
         System.out.print("Please enter your current earth weight: ");
 
-        earthWeight = keyboard.nextInt();
+        earthWeight = input.nextInt();
 
         System.out.println();
         System.out.println("I have information for the following planets:");
@@ -18,7 +18,8 @@ public class App {
         System.out.println();
         System.out.print("Which planet are you visiting? ");
 
-        planet = keyboard.nextInt();
+        planet = input.nextInt();
+        input.close();
 
         System.out.println();
 
